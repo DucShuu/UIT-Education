@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
-        android:textSize="20sp"
+        android:textSize="@dimen/size20sp"
         android:textColor="#202dbc"
         android:id="@+id/lbl_list_group"
         android:textStyle="bold"/>
@@ -19,10 +19,9 @@
 
     <ImageView
         android:id="@+id/img_expand"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="@dimen/size35dp"
+        android:layout_height="@dimen/size35dp"
         android:layout_centerVertical="true"
         android:layout_toRightOf="@+id/lbl_list_group"
         android:background="@drawable/group_indicator" />
-
 </RelativeLayout>

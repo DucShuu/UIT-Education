@@ -19,4 +19,37 @@
     <string name="quick_sort">Quick Sort</string>
     <string name="merge_sort">Merge Sort</string>
     <string name="radix_sort">Radix Sort</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="algorithm_name">
+        <item>Linear Search</item>
+        <item>Binary Search</item>
+        <item>Selection Sort</item>
+        <item>Interchange Sort</item>
+        <item>Bubble Sort</item>
+        <item>Shaker Sort</item>
+        <item>Insert Sort</item>
+        <item>Shell Sort</item>
+        <item>Quick Sort</item>
+        <item>Heap Sort</item>
+        <item>Merge Sort</item>
+        <item>Radix Sort</item>
+    </string-array>
+
+    <string name="linear_search_id">iwo5WAldDks</string>
+    <string name="binary_search_id">T2sFYY-fT5o</string>
+    <string name="selection_sort_id">xWBP4lzkoyM</string>
+    <string name="interchange_sort_id">xIlN6TcoHAQ</string>
+    <string name="bubble_sort_id">nmhjrI-aW5o</string>
+    <string name="shaker_sort_id">zpreaO28Epw</string>
+    <string name="insert_sort_id">OGzPmgsI-pQ</string>
+    <string name="shell_sort_id">SHcPqUe2GZM</string>
+    <string name="quick_sort_id">PgBzjlCcFvc</string>
+    <string name="heap_sort_id">MtQL_ll5KhQ</string>
+    <string name="merge_sort_id">JSceec-wEyw</string>
+    <string name="radix_sort_id">nu4gDuFabIM</string>
+
+
 </resources>

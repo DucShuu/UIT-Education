@@ -79,7 +79,6 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter{
         lblListHeaderTitle.setText(headerTitle);
 
         ImageView img = convertView.findViewById(R.id.img_expand);
-
         img.setSelected(isExpanded);
 
         return convertView;
@@ -103,6 +102,6 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter{
 
     @Override
     public boolean isChildSelectable(int i, int i1) {
-        return false;
+        return true;
     }
 }

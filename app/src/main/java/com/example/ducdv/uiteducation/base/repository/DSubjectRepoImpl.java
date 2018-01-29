@@ -20,9 +20,9 @@ public class DSubjectRepoImpl implements DSubjectRepo {
         listHeader.add("Search Algorithm");
         listHeader.add("Sort Algorithm");
 
-        List<String> lisrSearchAlgo = new ArrayList<>();
-        lisrSearchAlgo.add("Linear Search");
-        lisrSearchAlgo.add("Binary Search");
+        List<String> listSearchAlgo = new ArrayList<>();
+        listSearchAlgo.add("Linear Search");
+        listSearchAlgo.add("Binary Search");
 
         List<String> listSortAlgo = new ArrayList<>();
         listSortAlgo.add("Selection Sort");
@@ -37,7 +37,7 @@ public class DSubjectRepoImpl implements DSubjectRepo {
         listSortAlgo.add("Radix Sort");
 
         HashMap<String, List<String>> listChild = new HashMap<>();
-        listChild.put(listHeader.get(0), lisrSearchAlgo);
+        listChild.put(listHeader.get(0), listSearchAlgo);
         listChild.put(listHeader.get(1), listSortAlgo);
 
         listener.onSuccess(listHeader, listChild);

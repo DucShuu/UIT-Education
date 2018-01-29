@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="@dimen/size55dp"
+    android:layout_height="@dimen/size75dp"
     android:orientation="vertical"
     >
 
@@ -9,9 +9,10 @@
         android:id="@+id/lbl_list_item"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/size15sp"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
-        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
+        android:drawableStart="@android:drawable/btn_star_big_on"
+        android:paddingBottom="@dimen/size8dp"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:paddingTop="@dimen/size8dp"
+        android:textSize="@dimen/size15sp" />
 
 </LinearLayout>

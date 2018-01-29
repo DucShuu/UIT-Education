@@ -3,8 +3,10 @@
 
     <dimen name="size10dp">10dp</dimen>
     <dimen name="size8dp">8dp</dimen>
-    <dimen name="size55dp">55dp</dimen>
+    <dimen name="size75dp">75dp</dimen>
+    <dimen name="size35dp">35dp</dimen>
 
     <dimen name="size15sp">15sp</dimen>
-    
+    <dimen name="size20sp">20sp</dimen>
+
 </resources>

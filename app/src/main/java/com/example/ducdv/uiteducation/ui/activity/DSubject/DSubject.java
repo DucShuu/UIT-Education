@@ -1,7 +1,11 @@
 package com.example.ducdv.uiteducation.ui.activity.DSubject;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
 
@@ -21,6 +25,8 @@ public class DSubject extends AppCompatActivity implements DSubjectView {
     private ExpandableListAdapter adapter;
     private DSubjectPresenter presenter;
 
+    public static final String FORWARD_KEY = "Algorithm's Name";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +35,33 @@ public class DSubject extends AppCompatActivity implements DSubjectView {
 
         addControls();
         init();
+        setEvents();
 
     }
+
+    private void setEvents() {
+       listContent.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+           @Override
+           public boolean onChildClick(ExpandableListView parent, View view, int groupPosition, int childPosition, long id) {
+
+               final String algorithmName = (String) adapter.getChild(groupPosition, childPosition);
+
+               goToDetailActivity(algorithmName);
+
+               return false;
+           }
+       });
+    }
+
+    private void goToDetailActivity(String algorithmName) {
+
+        Intent goToDetail = new Intent(this, DSubjectDetail.class);
+        goToDetail.putExtra(FORWARD_KEY , algorithmName);
+
+        startActivity(goToDetail);
+
+    }
+
 
     private void showToastMessage(String message){
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
@@ -61,6 +92,5 @@ public class DSubject extends AppCompatActivity implements DSubjectView {
         super.onResume();
         presenter.loadDataToAdapter();
     }
-
 
 }
