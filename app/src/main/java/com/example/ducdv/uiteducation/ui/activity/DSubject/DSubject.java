@@ -21,6 +21,8 @@ import java.util.List;
 
 public class DSubject extends AppCompatActivity implements DSubjectView {
 
+    private final String TAG = "tag";
+
     private ExpandableListView listContent;
     private ExpandableListAdapter adapter;
     private DSubjectPresenter presenter;
@@ -57,7 +59,6 @@ public class DSubject extends AppCompatActivity implements DSubjectView {
 
         Intent goToDetail = new Intent(this, DSubjectDetail.class);
         goToDetail.putExtra(FORWARD_KEY , algorithmName);
-
         startActivity(goToDetail);
 
     }

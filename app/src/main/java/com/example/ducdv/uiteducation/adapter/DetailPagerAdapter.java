@@ -1,8 +1,14 @@
 package com.example.ducdv.uiteducation.adapter;
 
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import com.example.ducdv.uiteducation.base.model.AlgorithmModel;
+import com.example.ducdv.uiteducation.ui.fragment.CodeFragment;
+import com.example.ducdv.uiteducation.ui.fragment.DescFragment;
+import com.example.ducdv.uiteducation.ui.fragment.VisualFragment;
 
 /**
  * Created by DucDV on 01/29/2018.
@@ -10,17 +16,53 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class DetailPagerAdapter extends FragmentPagerAdapter {
 
-    public DetailPagerAdapter(FragmentManager fm) {
+    private static final int NUM_PAGES = 3;
+
+    private AlgorithmModel data;
+
+    public DetailPagerAdapter(FragmentManager fm, AlgorithmModel data) {
         super(fm);
+        this.data = data;
     }
+
 
     @Override
     public Fragment getItem(int position) {
-        return null;
+
+        switch (position){
+            // desc fragment
+            case 0:
+                return DescFragment.newInstance(data);
+
+            // code fragment
+            case 1:
+                return CodeFragment.newInstance(data);
+
+            // visualization fragment
+            case 2:
+                return VisualFragment.newInstance(data);
+        }
+
+        return CodeFragment.newInstance(data);
     }
 
     @Override
     public int getCount() {
-        return 3;
+        return NUM_PAGES;
+    }
+
+    @Nullable
+    @Override
+    public CharSequence getPageTitle(int position) {
+        switch (position){
+            case 0:
+                return "Description";
+            case 1:
+                return "Code";
+            case 2:
+                return "Visualization";
+
+        }
+        return "";
     }
 }

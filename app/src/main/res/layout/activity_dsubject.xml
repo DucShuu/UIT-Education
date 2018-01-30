@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.ducdv.uiteducation.ui.activity.DSubject.DSubject"
-    android:background="#f4f4f4">
+    android:background="#8f503bc7">
 
 
     <ExpandableListView
@@ -14,5 +14,5 @@
         android:layout_height="match_parent"
         android:layout_margin="@dimen/size10dp"
         android:id="@+id/list_content_dsubject"
-        android:groupIndicator="@null"/>
+        android:groupIndicator="@null"></ExpandableListView>
 </LinearLayout>

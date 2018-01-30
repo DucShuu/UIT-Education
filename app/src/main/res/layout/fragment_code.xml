@@ -6,11 +6,20 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/lbl_code"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:autoLink="web"
+        android:gravity="fill_horizontal"
+        android:layerType="software"
+        android:maxLines="1000"
+        android:paddingLeft="@dimen/size15sp"
+        android:paddingTop="@dimen/size15sp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
         android:text="@string/hello_blank_fragment"
-        android:gravity="center"
+        android:textIsSelectable="true"
         android:textSize="@dimen/size15sp"
-        android:id="@+id/lbl_code"/>
+        android:textColor="#f1e2df"/>
 
 </FrameLayout>

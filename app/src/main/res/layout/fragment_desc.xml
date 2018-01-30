@@ -9,8 +9,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/hello_blank_fragment"
-        android:gravity="center"
+        android:gravity="left"
         android:textSize="@dimen/size15sp"
-        android:id="@+id/lbl_desc"/>
+        android:id="@+id/lbl_desc"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:maxLines="1000"
+        android:textIsSelectable="true"
+        android:textColor="#f1e2df"/>
 
 </FrameLayout>
