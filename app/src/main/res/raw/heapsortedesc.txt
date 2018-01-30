@@ -1,0 +1,14 @@
+Introduction: Given an array arr[] of n elements, write a function to sort arr [].
+
+
+Heap sort is a comparison based sorting technique based on Binary Heap data structure. It is similar to selection sort where we first find the maximum element and place the maximum element at the end. We repeat the same process for remaining element.
+
+Initially on receiving an unsorted list, the first step in heap sort is to create a Heap data structure(Max-Heap or Min-Heap). Once heap is built, the first element of the Heap is either largest or smallest(depending upon Max-Heap or Min-Heap), so we put the first element of the heap in our array. Then we again make heap using the remaining elements, to again pick the first element of the heap and put it into the array. We keep on doing the same repeatedly untill we have the complete sorted list in our array.
+
+Complexity Analysis of Heap Sort
+Worst Case Time Complexity : O(n log n)
+Best Case Time Complexity : O(n log n)
+Average Time Complexity : O(n log n)
+Space Complexity : O(1)
+Heap sort is not a Stable sort, and requires a constant space for sorting a list.
+Heap Sort is very fast and is widely used for sorting.

@@ -1,0 +1,11 @@
+Introduction: Given an array arr[] of n elements, write a function to search a given element x in arr[].
+
+Selection sorting is conceptually the most simplest sorting algorithm. This algorithm first finds the smallest element in the array and exchanges it with the element in the first position, then find the second smallest element and exchange it with the element in the second position, and continues in this way until the entire array is sorted.
+
+
+Complexity Analysis of Selection Sorting:
+Worst Case Time Complexity : O(n2)
+Best Case Time Complexity : O(n2)
+Average Time Complexity : O(n2)
+Space Complexity : O(1)
+The good thing about selection sort is it never makes more than O(n) swaps and can be useful when memory write is a costly operation.
