@@ -5,6 +5,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatDelegate;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -19,7 +20,7 @@ import com.example.ducdv.uiteducation.ui.fragment.CodeFragment;
 import com.example.ducdv.uiteducation.ui.fragment.DescFragment;
 import com.example.ducdv.uiteducation.ui.fragment.VisualFragment;
 
-public class DSubjectDetail extends AppCompatActivity implements DSubjectDetailView, DescFragment.OnFragmentInteractionListener, CodeFragment.OnFragmentInteractionListener, VisualFragment.OnFragmentInteractionListener {
+public class DSubjectDetail extends AppCompatActivity implements DSubjectDetailView{
 
     private final String TAG = "tag";
 
@@ -35,7 +36,10 @@ public class DSubjectDetail extends AppCompatActivity implements DSubjectDetailV
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
         setContentView(R.layout.activity_dsubject_detail);
+
+        Log.i("shuu", "DSubjectDetail onCreate");
 
         getDataFromPreviousActivity();
 
@@ -61,10 +65,6 @@ public class DSubjectDetail extends AppCompatActivity implements DSubjectDetailV
         tab = findViewById(R.id.tab_layout);
     }
 
-    @Override
-    public void onFragmentInteraction(Uri uri) {
-
-    }
 
     @Override
     public void sendDataToFragment(AlgorithmModel data) {
