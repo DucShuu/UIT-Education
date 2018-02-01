@@ -1,12 +1,12 @@
 package com.example.ducdv.uiteducation.ui.activity.DSubject;
 
-import android.net.Uri;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatDelegate;
 import android.util.Log;
+import android.view.Menu;
 import android.widget.Toast;
 
 import com.example.ducdv.uiteducation.R;
@@ -16,13 +16,10 @@ import com.example.ducdv.uiteducation.base.repository.DecodeRawDataImpl;
 import com.example.ducdv.uiteducation.bussiness.DSubjectDetailPresenter;
 import com.example.ducdv.uiteducation.bussiness.DSubjectDetailPresenterImpl;
 import com.example.ducdv.uiteducation.ui.contract.DSubjectDetailView;
-import com.example.ducdv.uiteducation.ui.fragment.CodeFragment;
-import com.example.ducdv.uiteducation.ui.fragment.DescFragment;
-import com.example.ducdv.uiteducation.ui.fragment.VisualFragment;
 
-public class DSubjectDetail extends AppCompatActivity implements DSubjectDetailView{
+public class DSubjectDetailActivity extends AppCompatActivity implements DSubjectDetailView{
 
-    private final String TAG = "tag";
+    private final String TAG = DSubjectDetailActivity.class.getName();
 
     private ViewPager pager;
     private TabLayout tab;
@@ -39,16 +36,16 @@ public class DSubjectDetail extends AppCompatActivity implements DSubjectDetailV
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
         setContentView(R.layout.activity_dsubject_detail);
 
-        Log.i("shuu", "DSubjectDetail onCreate");
-
         getDataFromPreviousActivity();
-
         setTitle(dataReceived);
-
         addControls();
-
         init();
+    }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.option_menu, menu);
+        return true;
     }
 
     private void init() {
@@ -56,7 +53,7 @@ public class DSubjectDetail extends AppCompatActivity implements DSubjectDetailV
     }
 
     private void getDataFromPreviousActivity() {
-        dataReceived = getIntent().getExtras().getString(DSubject.FORWARD_KEY, "");
+        dataReceived = getIntent().getExtras().getString(DSubjectActivity.FORWARD_KEY, "");
     }
 
 
@@ -71,7 +68,7 @@ public class DSubjectDetail extends AppCompatActivity implements DSubjectDetailV
        adapter = new DetailPagerAdapter(getSupportFragmentManager(), data);
        pager.setAdapter(adapter);
 
-       tab.setupWithViewPager(pager);
+       tab.setupWithViewPager(pager, true);
 
     }
 

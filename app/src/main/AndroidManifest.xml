@@ -13,19 +13,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activity.MainActivity">
+        <activity android:name=".ui.activity.MainActivity"
+            android:screenOrientation="portrait"
+            >
 
         </activity>
-        <activity android:name=".ui.activity.WelcomeActivity" />
-        <activity android:name=".ui.activity.DSubject.DSubject"
-            android:label="@string/select_algo_label">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".ui.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.DSubject.DSubjectDetail"></activity>
+
+        <activity android:name=".ui.activity.DSubject.DSubjectActivity"
+            android:label="@string/select_algo_label"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ui.activity.DSubject.DSubjectDetailActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
     </application>
 
 </manifest>

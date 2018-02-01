@@ -51,5 +51,10 @@
     <string name="merge_sort_id">JSceec-wEyw</string>
     <string name="radix_sort_id">nu4gDuFabIM</string>
 
+    <string name="item_report">Report</string>
+    <string name="item_contribute">Contribute</string>
+
+    <string name="app_ver">ver1.0</string>
+    <string name="copyright">© UIT Android Dev Team</string>
 
 </resources>

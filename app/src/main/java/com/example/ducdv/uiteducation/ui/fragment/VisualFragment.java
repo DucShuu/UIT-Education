@@ -1,11 +1,6 @@
 package com.example.ducdv.uiteducation.ui.fragment;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.transition.FragmentTransitionSupport;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -16,10 +11,6 @@ import android.view.ViewGroup;
 
 import com.example.ducdv.uiteducation.R;
 import com.example.ducdv.uiteducation.base.model.AlgorithmModel;
-import com.example.ducdv.uiteducation.base.rest.Config;
-import com.google.android.youtube.player.YouTubeInitializationResult;
-import com.google.android.youtube.player.YouTubePlayer;
-import com.google.android.youtube.player.YouTubePlayerSupportFragment;
 
 /**
  * A simple {@link Fragment} subclass.

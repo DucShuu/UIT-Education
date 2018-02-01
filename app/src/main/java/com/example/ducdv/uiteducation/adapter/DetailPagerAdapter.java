@@ -51,18 +51,5 @@ public class DetailPagerAdapter extends FragmentPagerAdapter {
         return NUM_PAGES;
     }
 
-    @Nullable
-    @Override
-    public CharSequence getPageTitle(int position) {
-        switch (position){
-            case 0:
-                return "Description";
-            case 1:
-                return "Code";
-            case 2:
-                return "Visualization";
 
-        }
-        return "";
-    }
 }

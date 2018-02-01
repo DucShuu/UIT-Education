@@ -1,12 +1,10 @@
 package com.example.ducdv.uiteducation.bussiness;
 
 import android.content.res.Resources;
-import android.util.Log;
 
 import com.example.ducdv.uiteducation.R;
 import com.example.ducdv.uiteducation.base.model.AlgorithmModel;
 import com.example.ducdv.uiteducation.base.repository.DecodeRawData;
-import com.example.ducdv.uiteducation.ui.activity.DSubject.DSubjectDetail;
 import com.example.ducdv.uiteducation.ui.contract.DSubjectDetailView;
 
 /**

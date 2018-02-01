@@ -1,4 +1,4 @@
-package com.example.ducdv.uiteducation.base.rest;
+package com.example.ducdv.uiteducation.base.repository;
 
 /**
  * Created by DucDV on 01/31/2018.

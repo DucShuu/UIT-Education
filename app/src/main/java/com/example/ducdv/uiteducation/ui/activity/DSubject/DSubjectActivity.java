@@ -3,9 +3,7 @@ package com.example.ducdv.uiteducation.ui.activity.DSubject;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
 
@@ -19,9 +17,9 @@ import com.example.ducdv.uiteducation.ui.contract.DSubjectView;
 import java.util.HashMap;
 import java.util.List;
 
-public class DSubject extends AppCompatActivity implements DSubjectView {
+public class DSubjectActivity extends AppCompatActivity implements DSubjectView {
 
-    private final String TAG = "tag";
+    private final String TAG = DSubjectActivity.class.getName();
 
     private ExpandableListView listContent;
     private ExpandableListAdapter adapter;
@@ -57,7 +55,7 @@ public class DSubject extends AppCompatActivity implements DSubjectView {
 
     private void goToDetailActivity(String algorithmName) {
 
-        Intent goToDetail = new Intent(this, DSubjectDetail.class);
+        Intent goToDetail = new Intent(this, DSubjectDetailActivity.class);
         goToDetail.putExtra(FORWARD_KEY , algorithmName);
         startActivity(goToDetail);
 

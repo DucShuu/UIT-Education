@@ -5,14 +5,14 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:padding="@dimen/size8dp"
-    android:background="#7d935555">
+    android:background="@color/groupBackground">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
         android:textSize="@dimen/size20sp"
-        android:textColor="#18b188"
+        android:textColor="@color/groupTextColor"
         android:id="@+id/lbl_list_group"
         android:textStyle="bold"/>
 

@@ -7,7 +7,7 @@
 
     <TextView
         android:id="@+id/lbl_list_item"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableStart="@android:drawable/btn_star_big_on"
         android:paddingBottom="@dimen/size8dp"

@@ -5,6 +5,9 @@
     <dimen name="size8dp">8dp</dimen>
     <dimen name="size75dp">75dp</dimen>
     <dimen name="size35dp">35dp</dimen>
+    <dimen name="size20dp">20dp</dimen>
+    <dimen name="size0dp">0dp</dimen>
+    <dimen name="size3dp">3dp</dimen>
 
     <dimen name="size15sp">15sp</dimen>
     <dimen name="size20sp">20sp</dimen>

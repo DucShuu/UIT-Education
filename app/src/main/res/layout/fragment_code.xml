@@ -20,6 +20,6 @@
         android:text="@string/hello_blank_fragment"
         android:textIsSelectable="true"
         android:textSize="@dimen/size15sp"
-        android:textColor="#f1e2df"/>
+        android:textColor="@color/detailTextColor"/>
 
 </FrameLayout>

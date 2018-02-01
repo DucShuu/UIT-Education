@@ -6,6 +6,7 @@
         <item name="colorPrimary">#382929</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
     </style>
 
     <style name="TitlePagerStyle" parent="Base.TextAppearance.Widget.AppCompat.Toolbar.Title">

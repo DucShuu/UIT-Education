@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.ducdv.uiteducation.ui.activity.DSubject.DSubject"
+    tools:context="com.example.ducdv.uiteducation.ui.activity.DSubject.DSubjectActivity"
     android:background="#8f503bc7">
 
 
